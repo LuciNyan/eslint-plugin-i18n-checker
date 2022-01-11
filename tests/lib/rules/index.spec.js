@@ -16,13 +16,13 @@ const tests = {
     {
       code: "i18n.t('just_in_en');",
       errors: [
-        {message: 'Missing key: just_in_en in JSON: /tests/locales/zh.json'},
+        {message: 'Missing key: just_in_en in JSON: tests/locales/zh.json'},
       ],
     },
     {
       code: "i18n.t('just_in_zh');",
       errors: [
-        {message: 'Missing key: just_in_zh in JSON: /tests/locales/en.json'},
+        {message: 'Missing key: just_in_zh in JSON: tests/locales/en.json'},
       ],
     },
   ],
@@ -36,7 +36,7 @@ const config = {
         'i18n.t',
         't'
       ],
-      localesPath: '/tests/locales',
+      localesPath: 'tests/locales',
     }
   ],
 };
@@ -53,7 +53,7 @@ const multiJsonConfig = {
         'i18n.t',
         't'
       ],
-      localesPath: '/tests/multi-json-locales',
+      localesPath: 'tests/multi-json-locales',
       specifics: [
         {
           matcher: /^global:(.*)$/,
@@ -85,27 +85,27 @@ const multiJsonTest = {
     {
       code: "t('age');",
       errors: [
-        {message: 'Missing key: age in JSON: /tests/multi-json-locales/en/app.json'},
-        {message: 'Missing key: age in JSON: /tests/multi-json-locales/zh/app.json'},
+        {message: 'Missing key: age in JSON: tests/multi-json-locales/en-US/app.json'},
+        {message: 'Missing key: age in JSON: tests/multi-json-locales/zh/app.json'},
       ]
     },
     {
       code: "t('global:age');",
       errors: [
-        {message: 'Missing key: global:age in JSON: /tests/multi-json-locales/en/global.json'},
-        {message: 'Missing key: global:age in JSON: /tests/multi-json-locales/zh/global.json'},
+        {message: 'Missing key: global:age in JSON: tests/multi-json-locales/en-US/global.json'},
+        {message: 'Missing key: global:age in JSON: tests/multi-json-locales/zh/global.json'},
       ]
     },
     {
       code: "i18n.t('global:just_in_en');",
       errors: [
-        {message: 'Missing key: global:just_in_en in JSON: /tests/multi-json-locales/zh/global.json'},
+        {message: 'Missing key: global:just_in_en in JSON: tests/multi-json-locales/zh/global.json'},
       ],
     },
     {
       code: "i18n.t('global:just_in_zh');",
       errors: [
-        {message: 'Missing key: global:just_in_zh in JSON: /tests/multi-json-locales/en/global.json'},
+        {message: 'Missing key: global:just_in_zh in JSON: tests/multi-json-locales/en-US/global.json'},
       ],
     },
   ],
