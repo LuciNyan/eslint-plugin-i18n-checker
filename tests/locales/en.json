@@ -1,0 +1,10 @@
+{
+  "name": "lucinyan",
+  "just_in_en": "just_in_en",
+  "a.b.c": "a.b.c",
+  "d": {
+    "e": {
+      "f": "d.e.f"
+    }
+  }
+}
