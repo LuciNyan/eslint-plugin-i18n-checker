@@ -32,7 +32,7 @@ const tests = {
 const config = {
   options: [
     {
-      translationFunctionNames: [
+      functionNames: [
         'I18n.t',
         't'
       ],
