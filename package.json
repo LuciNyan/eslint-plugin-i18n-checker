@@ -5,8 +5,18 @@
   "keywords": [
     "eslint",
     "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "json",
+    "i18n",
+    "translations",
+    "internationalization",
+    "intl",
+    "linter"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LuciNyan/eslint-plugin-i18n-checker"
+  },
   "author": "lucinyan",
   "main": "lib/index.js",
   "scripts": {
@@ -29,5 +39,5 @@
   "peerDependencies": {
     "eslint": ">=6"
   },
-  "license": "ISC"
+  "license": "MIT"
 }
