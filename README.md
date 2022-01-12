@@ -4,7 +4,7 @@ Check i18n
 
 ## Installation
 
-You'll first need to install [ESLint](https://eslint.org/):
+You"ll first need to install [ESLint](https://eslint.org/):
 
 ```sh
 npm i eslint --save-dev
@@ -34,7 +34,26 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "i18n-checker/rule-name": 2
+      "i18n-checker/json-key-exists": [
+        2,
+        {
+          "functionNames": [
+            "i18n.t",
+            "t"
+          ],
+          "localesPath": "public/locales",
+          "specifics": [
+            {
+              "matcher": "^global:(.*)$",
+              "to": "global.json"
+            },
+            {
+              "matcher": "^(.*)$",
+              "to": "app.json"
+            }
+          ]
+        }
+      ]
     }
 }
 ```
