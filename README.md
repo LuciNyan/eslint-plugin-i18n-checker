@@ -1,6 +1,6 @@
 # eslint-plugin-i18n-checker
 
-Check i18n 
+Check i18n keys existence
 
 ## Installation
 
@@ -60,7 +60,4 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-* Fill in provided rules here
-
-
-# eslint-plugin-i18n-checker
+* json-key-exists
