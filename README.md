@@ -53,6 +53,12 @@ Then configure the rules you want to use under the rules section.
             }
           ]
         }
+      ],
+      "@talkdesk/i18n-checker/key-must-be-literal": [
+        1,
+        {
+          "functionNames": ["i18n.t", "t"]
+        }
       ]
     }
 }
@@ -61,3 +67,4 @@ Then configure the rules you want to use under the rules section.
 ## Supported Rules
 
 * json-key-exists
+* key-must-be-literal
