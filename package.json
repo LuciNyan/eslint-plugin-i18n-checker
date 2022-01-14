@@ -24,8 +24,7 @@
     "test": "mocha tests --recursive"
   },
   "dependencies": {
-    "dotty": "^0.1.2",
-    "requireindex": "^1.2.0"
+    "dotty": "^0.1.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.8",

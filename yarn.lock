@@ -846,11 +846,6 @@ require-directory@^2.1.1:
   resolved "https://registry.npmmirror.com/require-directory/download/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
   integrity sha1-jGStX9MNqxyXbiNE/+f3kqam30I=
 
-requireindex@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npmmirror.com/requireindex/download/requireindex-1.2.0.tgz#3463cdb22ee151902635aa6c9535d4de9c2ef1ef"
-  integrity sha1-NGPNsi7hUZAmNapslTXU3pwu8e8=
-
 resolve-from@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmmirror.com/resolve-from/download/resolve-from-4.0.0.tgz?cache=0&sync_timestamp=1632754457717&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fresolve-from%2Fdownload%2Fresolve-from-4.0.0.tgz#4abcd852ad32dd7baabfe9b40e00a36db5f392e6"
